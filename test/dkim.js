@@ -1,5 +1,5 @@
 var testCase = require('nodeunit').testCase,
-    dkim = require("../src/dkim"),
+    dkim = require("../src/mailcomposer-dkim"),
     fs = require("fs");
     
 

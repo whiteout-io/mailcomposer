@@ -1,6 +1,6 @@
 var testCase = require('nodeunit').testCase,
     MailComposer = require("../src/mailcomposer").MailComposer,
-    toPunycode = require("../src/punycode"),
+    toPunycode = require("../src/mailcomposer-punycode"),
     MailParser = require("mailparser").MailParser,
     fs = require("fs"),
     mime = require("mime"),

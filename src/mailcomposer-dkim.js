@@ -8,7 +8,7 @@ define(function(require) {
     var shims = require('node-shims'),
         crypto = (typeof module === 'undefined' && !module.exports) ? shims.crypto : require('crypto'),
         mimelib = require("mimelib"),
-        toPunycode = require("./punycode"),
+        toPunycode = require("./mailcomposer-punycode"),
         o = {};
 
     /**

@@ -11,9 +11,9 @@ define(function(require) {
         utillib = (typeof module === 'undefined' && !module.exports) ? shims.util : require('util'),
         crypto = (typeof module === 'undefined' && !module.exports) ? shims.crypto : require('crypto'),
         mimelib = require("mimelib"),
-        toPunycode = require("./punycode"),
-        DKIMSign = require("./dkim").DKIMSign,
-        urlFetch = require("./urlfetch"),
+        toPunycode = require("./mailcomposer-punycode"),
+        DKIMSign = require("./mailcomposer-dkim").DKIMSign,
+        urlFetch = require("./mailcomposer-urlfetch"),
         mime = require("mime");
 
     require('setimmediate');
