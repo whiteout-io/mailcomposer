@@ -1,5 +1,5 @@
 var testCase = require('nodeunit').testCase,
-    dkim = require("../lib/dkim"),
+    dkim = require("../src/dkim"),
     fs = require("fs");
     
 

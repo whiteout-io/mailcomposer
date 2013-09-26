@@ -16,7 +16,7 @@
     "scripts":{
         "test": "nodeunit test/"
     },
-    "main" : "./lib/mailcomposer",
+    "main" : "./src/mailcomposer",
     "licenses" : [
         {
             "type": "MIT",
@@ -25,7 +25,10 @@
     ],
     "dependencies": {
         "mimelib": "~0.2",
-        "mime": "1.2.9"
+        "mime": "1.2.9",
+        "setimmediate": ">=1.0.1",
+        "amdefine": "~0.0.8",
+        "node-shims": "https://github.com/whiteout-io/node-shims/tarball/master"
     },
     "devDependencies": {
         "nodeunit": "*",
