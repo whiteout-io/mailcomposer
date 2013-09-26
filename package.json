@@ -24,8 +24,8 @@
         }
     ],
     "dependencies": {
-        "mimelib": "~0.2",
-        "mime": "1.2.9",
+        "mimelib": "https://github.com/whiteout-io/mimelib/tarball/amd",
+        "mime": "https://github.com/whiteout-io/node-mime/tarball/amd",
         "setimmediate": ">=1.0.1",
         "amdefine": "~0.0.8",
         "node-shims": "https://github.com/whiteout-io/node-shims/tarball/master"
