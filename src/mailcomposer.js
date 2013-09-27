@@ -6,10 +6,10 @@ define(function(require) {
     'use strict';
 
     var shims = require("node-shims"),
-        Buffer = (typeof module === 'undefined' && !module.exports) ? shims.Buffer.Buffer : require('buffer').Buffer,
-        Stream = (typeof module === 'undefined' && !module.exports) ? shims.Stream : require('stream').Stream,
-        utillib = (typeof module === 'undefined' && !module.exports) ? shims.util : require('util'),
-        crypto = (typeof module === 'undefined' && !module.exports) ? shims.crypto : require('crypto'),
+        Buffer = shims.Buffer.Buffer,
+        Stream = shims.Stream,
+        utillib = shims.util,
+        crypto = shims.crypto,
         mimelib = require("mimelib"),
         toPunycode = require("./mailcomposer-punycode"),
         DKIMSign = require("./mailcomposer-dkim").DKIMSign,

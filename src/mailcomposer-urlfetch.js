@@ -6,10 +6,10 @@ define(function(require) {
     'use strict';
 
     var shims = require("node-shims"),
-        http = (typeof module === 'undefined' && !module.exports) ? shims.http : require("http"),
-        https = (typeof module === 'undefined' && !module.exports) ? shims.https : require("https"),
-        urllib = (typeof module === 'undefined' && !module.exports) ? shims.url : require("url"),
-        Stream = (typeof module === 'undefined' && !module.exports) ? shims.Stream : require('stream').Stream;
+        http = shims.http,
+        https = shims.https,
+        urllib = shims.url,
+        Stream = shims.Stream;
 
     /**
      * <p>Open a stream to a specified URL</p>
