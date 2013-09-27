@@ -1285,7 +1285,7 @@ define(function(require) {
 
         this.emit("data", new Buffer(this._outputBuffer, "utf-8"));
 
-        process.nextTick(this.emit.bind(this, "end"));
+        setImmediate(this.emit.bind(this, "end"));
     };
 
     /* HELPER FUNCTIONS */
